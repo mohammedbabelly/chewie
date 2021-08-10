@@ -232,6 +232,7 @@ class ChewieController extends ChangeNotifier {
     this.materialProgressColors,
     this.placeholder,
     this.overlay,
+    this.animatedOpacityOverlay,
     this.showControlsOnInitialize = true,
     this.showOptions = true,
     this.optionsBuilder,
@@ -420,6 +421,9 @@ class ChewieController extends ChangeNotifier {
 
   /// A widget which is placed between the video and the controls
   final Widget? overlay;
+
+  /// A widget which is placed at the top of all
+  final Widget? animatedOpacityOverlay;
 
   /// Defines if the player will start in fullscreen when play is pressed
   final bool fullScreenByDefault;

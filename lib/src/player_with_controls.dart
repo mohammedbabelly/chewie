@@ -55,10 +55,11 @@ class PlayerWithControls extends StatelessWidget {
                 duration: const Duration(
                   milliseconds: 250,
                 ),
-                child: Container(
-                  decoration: const BoxDecoration(color: Colors.black54),
-                  child: Container(),
-                ),
+                child: chewieController.animatedOpacityOverlay ??
+                    Container(
+                      decoration: const BoxDecoration(color: Colors.black54),
+                      child: Container(),
+                    ),
               ),
             ),
           if (!chewieController.isFullScreen)
